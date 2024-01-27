@@ -43,11 +43,15 @@ p.spoiler:hover .answer{
 }
 
 .function {
-    color: #e47d00;
+    color: hotpink;
 }
 
 .number {
     color: lightseagreen;
+}
+
+.string {
+    color: #e47d00;
 }
 
 .comment {
