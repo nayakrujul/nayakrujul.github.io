@@ -1,0 +1,62 @@
+/* Image formatting */
+
+.icon {
+    height: 20px;
+    padding-right: 5px;
+    vertical-align: top;
+}
+
+
+/* Types of text */
+
+p.definition, p.code, p.question {
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+p.code code {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+p.spoiler .default {
+    display: block;
+}
+
+p.spoiler .answer {
+    display: none;
+}
+
+p.spoiler:hover .default {
+    display: none;
+}
+
+p.spoiler:hover .answer{
+    display: block;
+}
+
+
+/* Code formatting */
+
+.keyword {
+    color: blue;
+}
+
+.function {
+    color: #e47d00;
+}
+
+.number {
+    color: lightseagreen;
+}
+
+.comment {
+    color: grey;
+}
+
+
+/* Miscellaneous */
+
+strong {
+    color: red;
+}

@@ -10,3 +10,8 @@ body {
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
+a {
+    color: #3366cc;
+    font-style: italic;
+}
