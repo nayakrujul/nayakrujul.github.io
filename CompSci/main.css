@@ -64,3 +64,8 @@ p.spoiler:hover .answer{
 strong {
     color: red;
 }
+
+h3.home-link a {
+    font-style: normal;
+    color: #404040;
+}
