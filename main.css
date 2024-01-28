@@ -15,3 +15,7 @@ a {
     color: #3366cc;
     font-style: italic;
 }
+
+li {
+    padding-bottom: 10px;
+}
