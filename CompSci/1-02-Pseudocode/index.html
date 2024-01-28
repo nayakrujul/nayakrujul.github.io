@@ -103,7 +103,7 @@
             Example 4 <br />
             <code>
                 password &larr; <el class="function">USERINPUT</el> <br />
-                <el class="keyword">WHILE</el> password ≠ <el class="string">&quot;Password123&quot;</el> <br />
+                <el class="keyword">WHILE</el> password ≠ <el class="string">&quot;abcd&quot;</el> <br />
                 &ensp; <el class="function">OUTPUT</el> <el class="string">&quot;Try again&quot;</el> <br />
                 &ensp; password &larr; <el class="function">USERINPUT</el> <br />
                 <el class="keyword">ENDWHILE</el> <br />
@@ -131,13 +131,13 @@
             <img src="../icons/code.svg" class="icon" />
             Example 5 <br />
             <code>
-                total &larr; <el class="number">1</el> <br />
+                result &larr; <el class="number">1</el> <br />
                 <el class="keyword">FOR</el> num &larr; <el class="number">1</el> <el class="keyword">TO</el> <el class="number">10</el> <br />
                 &ensp; <el class="keyword">IF</el> num MOD <el class="number">2</el> = <el class="number">0</el> <el class="keyword">THEN</el> <br />
-                &ensp; &ensp; total &larr; total * num <br />
+                &ensp; &ensp; result &larr; result * num <br />
                 &ensp; <el class="keyword">ENDIF</el> <br />
                 <el class="keyword">ENDFOR</el> <br />
-                <el class="function">OUTPUT</el> total
+                <el class="function">OUTPUT</el> result
             </code>
         </p>
 
@@ -148,8 +148,8 @@
 
         <p><i>Hint: <code>num MOD 2</code> means the remainder from dividing <code>num</code> by <code>2</code>.</i><br />&nbsp;</p>
 
-        <p class="spoiler">
-            <el class="default">Hover/tap to reveal</el>
+        <p class="spoiler noselect">
+            <el class="default">Tap/click to reveal</el>
             <el class="answer">Multiplies all the even numbers from 1 to 10 and outputs the result.</el>
         </p>
 
@@ -158,5 +158,7 @@
 
         <div id="sub">© Rujul Nayak <el id="year">2024-</el></div>
         <script src="../../year.js"></script>
+
+        <script src="../spoilers.js"></script>
     </body>
 </html>

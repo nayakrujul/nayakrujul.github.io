@@ -19,19 +19,19 @@ p.code code {
     font-family: 'Courier New', Courier, monospace;
 }
 
-p.spoiler .default {
+p.spoiler:not(.show-spoiler) .default {
     display: block;
 }
 
-p.spoiler .answer {
+p.spoiler:not(.show-spoiler) .answer {
     display: none;
 }
 
-p.spoiler:hover .default {
+p.spoiler.show-spoiler .default {
     display: none;
 }
 
-p.spoiler:hover .answer{
+p.spoiler.show-spoiler .answer {
     display: block;
 }
 
@@ -68,4 +68,19 @@ strong {
 h3.home-link a {
     font-style: normal;
     color: #404040;
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
