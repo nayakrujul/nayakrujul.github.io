@@ -19,3 +19,7 @@ a {
 li {
     padding-bottom: 10px;
 }
+
+img {
+    max-width: 95vw;
+}

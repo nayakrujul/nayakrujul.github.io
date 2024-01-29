@@ -9,7 +9,12 @@
 
 /* Types of text */
 
-p.definition, p.code, p.question, p.diagram {
+p.definition,
+p.code,
+p.question,
+p.diagram,
+p.table,
+p.graph {
     font-size: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -60,6 +65,22 @@ p.spoiler.show-spoiler .answer {
 
 .other {
     color: darkgoldenrod;
+}
+
+
+/* Table formatting */
+
+p.table {
+    margin-bottom: 0px;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 5px;
+    text-align: left;
 }
 
 
