@@ -104,3 +104,11 @@ h3.home-link a {
               user-select: none; /* Non-prefixed version, currently
                                     supported by Chrome, Edge, Opera and Firefox */
 }
+
+.pseudo-code {
+    font-size: 20px;
+}
+
+.pseudo-code code {
+    font-family: 'Courier New', Courier, monospace;
+}
