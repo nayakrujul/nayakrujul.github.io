@@ -112,3 +112,7 @@ h3.home-link a {
 .pseudo-code code {
     font-family: 'Courier New', Courier, monospace;
 }
+
+.small-code {
+    font-size: 15px;
+}
