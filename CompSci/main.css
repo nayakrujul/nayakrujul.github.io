@@ -67,6 +67,10 @@ p.spoiler.show-spoiler .answer {
     color: #ed4337;
 }
 
+.valid {
+    color: #3cb043;
+}
+
 .other {
     color: darkgoldenrod;
 }
@@ -119,4 +123,8 @@ h3.home-link a {
 
 .small-code {
     font-size: 1rem;
+}
+
+ul.less-padding-left {
+    padding-left: 25px;
 }
