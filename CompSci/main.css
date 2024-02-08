@@ -63,6 +63,10 @@ p.spoiler.show-spoiler .answer {
     color: grey;
 }
 
+.error {
+    color: #ed4337;
+}
+
 .other {
     color: darkgoldenrod;
 }
