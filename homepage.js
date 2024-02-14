@@ -4,8 +4,12 @@ const hx = window.innerHeight * 0.95;
 const hy = window.innerHeight * 1.1;
 
 function scrolled() {
+    if (window.innerWidth <= 800) {
+        div.style.backgroundColor = `white`;
+        div.style.color = `rgb(1, 97, 109)`;
+        return;
+    }
     let px = window.scrollY;
-    console.log(px);
     if (px >= hx) {
         let a = (px - hx) / (hy - hx);
         div.style.backgroundColor = `rgba(255, 255, 255, ${a})`;
@@ -20,5 +24,6 @@ function scrolled() {
 }
 
 document.addEventListener("scroll", scrolled);
+window.addEventListener("resize", scrolled);
 
 scrolled();
