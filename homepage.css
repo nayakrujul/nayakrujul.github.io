@@ -75,7 +75,19 @@ ul li img.ul-image {
 
 ul li p.ul-description {
     width: 25vw;
-    min-width: 150px;
+}
+
+@media (max-width: 800px) {
+    ul#header-list li {
+        font-size: 1rem;
+    }
+    ul.list li {
+        display: block;
+        text-align: center;
+    }
+    ul li p.ul-description {
+        width: 100%;
+    }
 }
 
 a {
