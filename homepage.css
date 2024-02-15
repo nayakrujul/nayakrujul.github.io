@@ -5,6 +5,7 @@ html {
 body {
     margin: 0;
     font-family: Helvetica, Arial, sans-serif;
+    text-align: center;
 }
 
 h1#heading {
@@ -77,6 +78,13 @@ ul li p.ul-description {
     width: 25vw;
 }
 
+p#about-description {
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
 @media (max-width: 800px) {
     ul#header-list li {
         font-size: 1rem;
@@ -91,6 +99,9 @@ ul li p.ul-description {
     div#header {
         display: none;
     }
+    p#about-description {
+        padding: 0;
+    }
 }
 
 a {
@@ -102,4 +113,38 @@ a {
 a:hover {
     filter: brightness(1.2);
     text-decoration: underline;
+}
+
+.wave {
+    animation-name: wave-animation;
+    animation-duration: 2.2s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
+    display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+    10% { transform: rotate(14.0deg) }
+    20% { transform: rotate(-8.0deg) }
+    30% { transform: rotate(14.0deg) }
+    40% { transform: rotate(-4.0deg) }
+    50% { transform: rotate(10.0deg) }
+    60% { transform: rotate( 0.0deg) }
+    100% { transform: rotate( 0.0deg) }
+}
+
+.move-up-down {
+    animation: MoveUpDown 1s linear infinite;
+    position: absolute;
+    font-style: normal;
+}
+  
+@keyframes MoveUpDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
 }
