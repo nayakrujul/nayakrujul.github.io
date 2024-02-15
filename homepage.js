@@ -5,8 +5,6 @@ const hy = window.innerHeight * 1.1;
 
 function scrolled() {
     if (window.innerWidth <= 800) {
-        div.style.backgroundColor = `white`;
-        div.style.color = `rgb(1, 97, 109)`;
         return;
     }
     let px = window.scrollY;

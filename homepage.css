@@ -88,6 +88,9 @@ ul li p.ul-description {
     ul li p.ul-description {
         width: 100%;
     }
+    div#header {
+        display: none;
+    }
 }
 
 a {
