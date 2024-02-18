@@ -9,11 +9,11 @@ function scrolled() {
     }
     let px = window.scrollY;
     if (px >= hx) {
-        let a = (px - hx) / (hy - hx);
+        let a = Math.min((px - hx) / (hy - hx), 1);
         div.style.backgroundColor = `rgba(255, 255, 255, ${a})`;
-        let r = 1 + 210 * (1 - a);
-        let g = 97 + 114 * (1 - a);
-        let b = 109 + 102 * (1 - a);
+        let r = 8 + 203 * (1 - a);
+        let g = 65 + 146 * (1 - a);
+        let b = 102 + 109 * (1 - a);
         div.style.color = `rgb(${r}, ${g}, ${b})`;
     } else {
         div.style.backgroundColor = `rgba(255, 255, 255, 0.0)`;
