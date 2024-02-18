@@ -9,14 +9,24 @@ body {
 }
 
 h1#heading {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: #084152;
     color: lightgray;
-    background-image: url("bg.jpeg");
     text-align: center;
     vertical-align: middle;
-    padding-top: 50vh;
-    padding-bottom: 50vh;
-    margin: 0;
-    font-size: 5rem;
+}
+
+h1#heading img#image {
+    display: inline;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+h1#heading span#alt {
+    display: none;
 }
 
 h2.subheading {
@@ -101,6 +111,17 @@ p#about-description {
     }
     p#about-description {
         padding: 0;
+    }
+    h1#heading img#image {
+        display: none;
+    }
+    h1#heading span#alt {
+        display: inline-block;
+        text-align: center;
+        vertical-align: middle;
+        font-size: 5rem;
+        margin-top: 40vh;
+        font-weight: normal;
     }
 }
 
