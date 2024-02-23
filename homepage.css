@@ -95,6 +95,10 @@ p#about-description {
     padding-bottom: 2rem;
 }
 
+div#contact {
+    padding-top: 20vh;
+}
+
 @media (max-width: 800px) {
     ul#header-list li {
         font-size: 1rem;
