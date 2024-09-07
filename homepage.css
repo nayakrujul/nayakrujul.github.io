@@ -11,22 +11,18 @@ body {
 h1#heading {
     margin: 0;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     background-color: #084152;
     color: lightgray;
     text-align: center;
     vertical-align: middle;
+    display: flex;
 }
 
 h1#heading img#image {
     display: inline;
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-}
-
-h1#heading span#alt {
-    display: none;
+    width: 80%;
+    margin: auto;
 }
 
 h2.subheading {
@@ -44,6 +40,7 @@ div#header {
     width: 100%;
     height: 4rem;
     background-color: rgba(255, 255, 255, 0.0);
+    z-index: 1000;
 }
 
 ul#header-list {
@@ -60,6 +57,8 @@ ul#header-list li {
 }
 
 ul.list {
+    display: flex;
+    flex-direction: column;
     list-style: none;
     text-align: center;
     vertical-align: top;
@@ -84,48 +83,13 @@ ul li img.ul-image {
     height: 5rem;
 }
 
-ul li p.ul-description {
-    width: 25vw;
-}
-
-p#about-description {
-    padding-left: 25%;
-    padding-right: 25%;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-}
-
 div#contact {
     padding-top: 20vh;
 }
 
 @media (max-width: 800px) {
-    ul#header-list li {
-        font-size: 1rem;
-    }
-    ul.list li {
-        display: block;
-        text-align: center;
-    }
-    ul li p.ul-description {
-        width: 100%;
-    }
     div#header {
         display: none;
-    }
-    p#about-description {
-        padding: 0;
-    }
-    h1#heading img#image {
-        display: none;
-    }
-    h1#heading span#alt {
-        display: inline-block;
-        text-align: center;
-        vertical-align: middle;
-        font-size: 5rem;
-        margin-top: 40vh;
-        font-weight: normal;
     }
 }
 
