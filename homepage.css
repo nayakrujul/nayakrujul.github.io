@@ -17,12 +17,10 @@ h1#heading {
     text-align: center;
     vertical-align: middle;
     display: flex;
-}
-
-h1#heading img#image {
-    display: inline;
-    width: 80%;
-    margin: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 100px;
 }
 
 h2.subheading {
@@ -32,6 +30,7 @@ h2.subheading {
     font-size: 3rem;
     padding-top: 15vh;
     padding-bottom: 5vh;
+    scroll-margin: -20px;
 }
 
 div#header {
@@ -41,6 +40,54 @@ div#header {
     height: 4rem;
     background-color: rgba(255, 255, 255, 0.0);
     z-index: 1000;
+
+    img#menu {
+        content: url("./menu-light.svg");
+        position: absolute;
+        left: 20px;
+        top: 15px;
+        height: calc(100% - 30px);
+        cursor: pointer;
+    }
+
+    img#logo {
+        height: 100%;
+    }
+
+    img#src {
+        content: url("./src-light.svg");
+        position: absolute;
+        right: 20px;
+        top: 15px;
+        height: calc(100% - 30px);
+    }
+
+    ul#menu-dropdown {
+        position: fixed;
+        left: 20px;
+        top: 3rem;
+        text-align: left;
+        font-size: 20px;
+        max-height: 0;
+        transition: max-height 0.5s ease-out;
+        overflow: hidden;
+        list-style: none;
+        padding: 0px;
+        background-color: inherit;
+
+        li {
+            margin: 10px 0px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+
+    ul#menu-dropdown.show {
+        max-height: 200px;
+        transition: max-height 0.5s ease-in;
+    }
 }
 
 ul#header-list {
@@ -58,16 +105,30 @@ ul#header-list li {
 
 ul.list {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     list-style: none;
     text-align: center;
     vertical-align: top;
     padding-left: 0;
+    flex-wrap: wrap;
 }
 
 ul.list li {
-    display: inline-block;
+    display: flex;
+    margin: 2vw;
+    border: 2px solid black;
+    border-radius: 20px;
+    transition: background-color 200ms;
+    flex: 1 0 34%;
+}
+
+ul.list li a {
+    width: 100%;
     padding: 5vw;
+}
+
+ul.list li:hover {
+    background-color: #eeeeee;
 }
 
 ul li strong.ul-header {
@@ -88,20 +149,22 @@ div#contact {
 }
 
 @media (max-width: 800px) {
-    div#header {
-        display: none;
+    ul.list li {
+        flex: 1 0 51%;
     }
 }
 
 a {
     color: inherit;
     text-decoration: none;
-    font-style: italic;
 }
 
-a:hover {
-    filter: brightness(1.2);
-    text-decoration: underline;
+.img-link img {
+    transition: filter 0.2s;
+}
+
+.img-link img:hover {
+    filter: brightness(0.8);
 }
 
 .wave {
@@ -135,6 +198,24 @@ a:hover {
     }
     50% {
         transform: translateY(-8px);
+    }
+}
+
+@keyframes dropdown {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes lheight {
+    0% {
+        line-height: 0px;
+    }
+    100% {
+        line-height: normal;
     }
 }
 
