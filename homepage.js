@@ -32,4 +32,11 @@ function open_menu() {
     lst.classList.toggle("show");
 }
 
+function close_menu({target}) {
+    if (target.id !== "menu")
+        document.getElementById("menu-dropdown").classList.remove("show");
+}
+
 document.getElementById("menu").addEventListener("click", open_menu);
+
+document.body.addEventListener("click", close_menu);
