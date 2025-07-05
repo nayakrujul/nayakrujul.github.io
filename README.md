@@ -1,3 +1,3 @@
-# Welcome to [rujulnayak.com](https://rujulnayak.com/)
+# Rujul Nayak's old website
 
-The homepage just showcases the Python projects and websites that I have created.
+This website is still viewable at [nayakrujul.github.io](https://nayakrujul.github.io). The new one is at [rujulnayak.com](https://rujulnayak.com) (source [here](https://github.com/nayakrujul/rujulnayak.com)).
